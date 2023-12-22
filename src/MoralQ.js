@@ -14,7 +14,7 @@ const [liste,SetListe]=useState([
   "واش كتعتقد أن السلام يمكن تحقيقه بغض النظر عن الوسائل المستخدمة؟",
   "واش كتعتبر تقديم التضحية الشخصية من أجل الآخرين واجبًا أخلاقيًا؟"
 ]
-)
+) 
 const [choice,SetChoice]=useState([])
 const [yes,SetYes]=useState(0)
 const [no,SetNo]=useState(0)
