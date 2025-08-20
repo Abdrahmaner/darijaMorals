@@ -13,7 +13,7 @@ const [liste,SetListe]=useState([
   "واش كتعتبر أن التحالفات السياسية يمكن أن تكون أخلاقية حتى إذا كانت تتناقض مع قيمك الشخصية؟",
   "واش كتعتقد أن السلام يمكن تحقيقه بغض النظر عن الوسائل المستخدمة؟",
   "واش كتعتبر تقديم التضحية الشخصية من أجل الآخرين واجبًا أخلاقيًا؟",
-	{process.env.OPENROUTER_API_KEY}
+	
 ]
 ) 
 const [choice,SetChoice]=useState([])
@@ -31,7 +31,7 @@ const [checked,SetChecked]=useState(true)
 	<>
 	<div className="container">
 	{choice.length==10? <><div>
-المهم النسبة المئوية ديالك من اه و لا هي {yes*100/10}%  اه  و %{no*100/10} من لا</div>
+المهم النسبة المئوية ديالك من اه و لا هي {yes*100/10}%  اه  و %{no*100/10} من لا {process.env.OPENROUTER_API_KEY}</div>
 	
 	<div className="analysis-container">
        {yes*100/10 > no*100/10?<><div className="analysis yes">
